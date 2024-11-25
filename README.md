@@ -3,7 +3,7 @@
 
 ![](./src/images/deploy2.png)
 
-- [View Website](https://pedrowfilho.github.io/challenges/frontend-mentor/newbie/huddle-landing-page/) 🖱️
+- [View Website](https://pedrowfilho.github.io/formulario-js/) 🖱️
 
 ## Visão Geral
 
