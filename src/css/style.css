@@ -50,7 +50,7 @@ body {
 
 .contact-form {
   width: 90%;
-  height: 65%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,7 @@ body {
 
 .contact-form textarea {
   resize: none;
-  height: 100px;
+  height: 120px;
 }
 
 .contact-form .required-fields {

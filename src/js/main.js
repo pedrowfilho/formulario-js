@@ -1,37 +1,45 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+const form = document.getElementById("contact-form");
 
-    const message = 'campo obrigatório';
-    
-    const fields = [
-      { id: 'name', message: message },
-      { id: 'email', message: message },
-      { id: 'phone', message: message },
-      { id: 'message', message: message }
-    ];
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
 
-    let isValid = true;
-  
-    fields.forEach(field => {
-      const input = document.getElementById(field.id);
-      const errorMessage = input.nextElementSibling;
+  validateForm();
+});
 
-      if (!input.value.trim()) {
-        input.classList.remove('success');
-        input.classList.add('error');
-        errorMessage.textContent = field.message;
-        errorMessage.style.display = 'block';
-        isValid = false;
-      } else {
-        input.classList.remove('error');
-        input.classList.add('success');
-        errorMessage.textContent = '';
-        errorMessage.style.display = 'none';
-      }
-    });
-  
-    if (isValid) {
-      alert('Formulário enviado com sucesso!');
+function validateForm() {
+  let isValid = true;
+  const inputs = form.querySelectorAll('input, textarea');
+
+  inputs.forEach(function (input) {
+    if (input.value.trim() === '') {
+      showError(input);
+      isValid = false;
+    } else {
+      showSuccess(input);
     }
   });
-  
+
+  if (isValid) {
+    alert('Formulario enviado com sucesso!');
+  }
+}
+
+function showError(input) {
+  input.style.borderColor = "red";
+
+  const errorMessage = input.nextElementSibling;
+
+  if (errorMessage) {
+    errorMessage.style.display = "block";
+  }
+}
+
+function showSuccess(input) {
+  input.style.borderColor = "green";
+
+  const errorMessage = input.nextElementSibling;
+
+  if (errorMessage) {
+    errorMessage.style.display = "none";
+  }
+}
