@@ -1,7 +1,5 @@
 # Formulário com validação
-![](./src/images/deploy1.png)
-
-![](./src/images/deploy2.png)
+![](./src/images/mockup2.png)
 
 - [View Website](https://pedrowfilho.github.io/formulario-js/) 🖱️
 
