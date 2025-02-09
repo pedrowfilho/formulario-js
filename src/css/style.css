@@ -20,6 +20,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  animation: bounceInLeft;
+  animation-duration: 1.5s;
 }
 
 .left-section h1 {
@@ -57,6 +60,9 @@ body {
   gap: 20px;
   padding: 20px;
   background: #fff;
+
+  animation: bounceInDown;
+  animation-duration: 1.5s;
 }
 
 .contact-form input,
