@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css">
+  </head>
+  <body>
+    <main class="container">
+
+      <section class="left-section">
+        <h1>Ficou com dúvidas?<br />Nos mande uma mensagem!</h1>
+        <p>
+          caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </section>
+
+      <section class="right-section">
+
+        <form class="contact-form" id="contact-form">
+
+          <input type="text" id="name" placeholder="Nome completo *" />
+          <span class="error-message">campo obrigatório</span>
+
+          <input type="email" id="email" placeholder="Email *" />
+          <span class="error-message">campo obrigatório</span>
+
+          <input type="tel" id="phone" placeholder="Telefone *" />
+          <span class="error-message">campo obrigatório</span>
+
+          <textarea id="message" placeholder="Mensagem *"></textarea>
+          <span class="error-message">campo obrigatório</span>
+
+          <p class="required-fields">*campos obrigatórios</p>
+          <button type="submit">Enviar</button>
+
+        </form>
+
+      </section>
+      
+    </main>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
